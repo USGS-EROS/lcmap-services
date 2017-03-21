@@ -147,3 +147,20 @@ services:
       - lcmap
     volumes:
       - ./volumes/elasticsearch/data:/usr/share/elasticsearch/data
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+      - "6667:6667"
+    environment:
+      - KAFKA_ADVERTISED_HOST_NAME=kafka
+      - KAFKA_ADVERTISED_PORT=9092
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+    networks:
+      - lcmap
+    depends_on:
+      - zookeeper
+    links:
+      - zookeeper
+    volumes:
+      - ./volumes/kafka/data:/usr/share/elasticsearch/data

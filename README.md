@@ -1,4 +1,4 @@
-# Inferno
+# LCMAP-Services
 
 Provides a convenient way to run underlying LCMAP services locally.
 
@@ -8,6 +8,7 @@ Provides a convenient way to run underlying LCMAP services locally.
 * Cassandra
 * Elasticsearch
 * RabbitMQ
+* Kafka
 
 ## Dependencies
 
