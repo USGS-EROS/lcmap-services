@@ -9,6 +9,8 @@ Provides a convenient way to run underlying LCMAP services locally.
 * Elasticsearch
 * RabbitMQ
 * Kafka
+* Mesos-DNS
+* Mesos Spark Cluster Dispatcher (for running Spark in cluster mode)
 
 ## Dependencies
 
