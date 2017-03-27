@@ -102,7 +102,7 @@ services:
       - MARATHON_ZK=zk://zookeeper:2181/marathon
 
   mesos-spark-cluster-dispatcher:
-    image: usgseros/mesos-cluster-dispatcher:1.1.1-2.1.0
+    image: usgseros/mesos-spark:1.1.1-2.1.0
     ports:
       - "7077:7077"
       - "8081:8081"
