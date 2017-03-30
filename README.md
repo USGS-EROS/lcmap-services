@@ -27,7 +27,7 @@ export HOSTNAME=$HOSTNAME
 # start everything
 docker-compose up
 
-# start somethings (with dependencies)
+# start individual services (with dependencies)
 docker-compose up marathon
 ```
 
